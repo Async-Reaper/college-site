@@ -9,14 +9,20 @@
     margin: 0 auto;
 }
 
+.wrapper {
+    margin: 120px 0 120px 0;
+    text-align: center;
+}
+
 .btn {
     min-width: 170px;
     min-height: 41px;
-    padding: 16px 12px;
+    padding: 11px 12px;
     font-size: var(--btn-text-size);
     font-weight: var(--btn-text-weigth);
     line-height: var(--btn-text-heigth);
     border-radius: 6px;
+    text-align: center;
 }
 
 .btn-primary {

@@ -1,1 +1,101 @@
-@import "global.css";
+@import "__variables.css";
+
+/* header */
+.header {
+    margin: 0 0 38px;
+}
+
+.header__inner {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+    grid-gap: 44px;
+}
+
+.header__left__part {
+    display: flex;
+    align-items: center;
+    grid-gap: 18px;
+}
+
+
+/* top */
+.top {
+    padding: 0 0 131px;
+}
+
+.top__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* news */
+.news__wrapper {
+    text-align: center;
+}
+
+.news__text-content {
+    text-align: center;
+    margin: 0 0 83px;
+}
+
+.news__list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 48px;
+}
+
+.news__item {
+    max-width: 276px;
+    padding: 12px 12px 20px;
+    background: var(--background-list-item);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.news__item img {
+    border-radius: 20px;
+    margin: 0 0 20px;
+}
+
+.news__item p {
+    margin: 0;
+}
+
+.news__item hr {
+    color: rgba(41, 43, 86, 0.45)
+}
+
+
+/* professions */
+.professions__text-content {
+    margin: 0 0 84px;
+}
+
+.professions__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.professions__item {
+    width: 372px;
+    text-align: left;
+    background: var(--background-list-item);
+    padding: 36px;
+    border-radius: 20px;
+}
+
+.professions__item-header {
+    display: flex;
+    align-items: center;
+    grid-gap: 40px;
+}
