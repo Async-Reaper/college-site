@@ -1,0 +1,26 @@
+:root {
+    /* color */
+    --btn-color: #5B00E1;
+    --btn-text-primary-color: #FFFFFF;
+    --btn-text-secondary-color: var(--btn-color);
+
+    --link-color: rgba(45, 71, 81, 0.6);
+    --link-color-hover: #2D4751;
+    --text-primary-color:rgba(45, 71, 81, 0.8);
+    --text-secondary-color: rgba(45, 71, 81, 0.4);
+    --background-body: rgba(214, 216, 249, 0.4);
+    --background-list-item: linear-gradient(180deg, rgba(214, 216, 249, 0.7) -53.38%, rgba(40, 43, 87, 0.119) 100%);
+
+    /* font */
+    --title-size: 56px;
+    --title-weigth: 600;
+    --title-heigth: 73px;
+
+    --text-size: 18px;
+    --text-weigth: 400;
+    --text-heigth: 27px;
+
+    --btn-text-size: 14px;
+    --btn-text-weigth: 600;
+    --btn-text-heigth: 17px
+}

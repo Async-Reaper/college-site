@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('./__variables.css');
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-weight: var(--text-weigth);
+    font-size: var(--text-size);
+    line-height: var(--text-heigth);
+    color: var(--text-primary-color);
+    background: var(--background-body);
+    margin: 0;
+}
+
+.container {
+    max-width: 1250px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.btn {
+    min-width: 170px;
+    min-height: 41px;
+    padding: 16px 12px;
+    font-size: var(--btn-text-size);
+    font-weight: var(--btn-text-weigth);
+    line-height: var(--btn-text-heigth);
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    border: 1px solid var(--btn-color);
+    background: var(--btn-color);
+    color: var(--btn-text-primary-color);
+}
+
+.btn-secondary {
+    border: 1px solid var(--btn-color);
+    background: transparent;
+    color: var(--btn-text-secondary-color);
+}
+
+.title {
+    font-size: var(--title-size);
+    font-weight: var(--title-weigth);
+    line-height: var(--title-heigth);
+    color: var(--text-primary-color);
+}
+
+.text {
+    font-size: var(--text-size);
+    font-weight: var(--text-weigth);
+    line-height: var(--text-heigth);
+    color: var(--text-secondary-color);
+}
