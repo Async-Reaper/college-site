@@ -1,0 +1,48 @@
+@import url('./__variables.css');
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--text-secondary-color);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+input {
+    outline: none;
+    background-image: none;
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-weight: var(--text-weigth);
+    font-size: var(--text-size);
+    line-height: var(--text-heigth);
+    color: var(--text-primary-color);
+    background: var(--background-body);
+    margin: 0;
+}
