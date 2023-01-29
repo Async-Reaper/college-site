@@ -28,6 +28,9 @@
 /* top */
 .top {
     padding: 0 0 131px;
+    background-image: url("../assets/img/top-img/top-background.svg");
+    background-repeat: no-repeat;
+    background-position: bottom right;
 }
 
 .top__inner {
@@ -36,7 +39,51 @@
     align-items: center;
 }
 
+.search {
+    position: relative;
+}
+
+.search__input {
+    width: 445px;
+    border: none;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.4);
+    background: #D6D8F9;
+    border-radius: 12px;
+    padding: 22px 32px;
+}
+
+
+.search__btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #ACB0F0;
+    border-radius: 6px;
+    border: none;
+    padding: 10px;
+    width: 44px;
+    height: 44px;
+}
+
+
+
 /* news */
+.news {
+    background-image: url("../assets/img/news-img/background-top.svg");
+    background-repeat: no-repeat;
+    background-position: top right;
+    position: relative;
+}
+
+.news::after {
+    position: absolute;
+    content: url("../assets/img/news-img/background-bottom.svg");
+    bottom: -7px;
+}
+
 .news__wrapper {
     text-align: center;
 }
@@ -62,7 +109,14 @@
     text-align: left;
 }
 
-.news__item img {
+.news__item-body {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid rgba(41, 43, 86, 0.45);
+    margin: 0 0 19px;
+}
+
+.news__item-body > img {
     border-radius: 20px;
     margin: 0 0 20px;
 }
@@ -71,10 +125,78 @@
     margin: 0;
 }
 
-.news__item hr {
-    color: rgba(41, 43, 86, 0.45)
+.news__name-group {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: #747FE4;
+    margin: 0 0 8px;
 }
 
+.news__title {
+    font-weight: 600;
+    font-size: var(--text-size);
+    line-height: var(--text-heigth);
+    color: var(--text-primary-color);
+    margin: 0 0 12px;
+}
+
+.news__description {
+    font-weight: var(--text-weigth);
+    font-size: 14px;
+    line-height: var(--text-heigth);
+    color: var(--text-secondary-color);
+    margin: 0 0 20px;
+}
+
+.news__date {
+    font-weight: var(--text-weigth);
+    font-size: 14px;
+    line-height: var(--text-heigth);
+    color: var(--text-secondary-color);
+    text-align: right;
+}
+
+.news__name-user {
+    font-weight: 500;
+    margin: 0 0 2px;
+}
+
+.news__item__footer {
+    display: flex;
+    align-items: center;
+}
+
+.news__item__footer-description {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    line-height: 27px;
+    margin: 0 0 0 15px;
+}
+
+
+/* description */
+.description {
+    background-image: url("../assets/img/description/background-top.svg");
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+
+.description__footer {
+    text-align: right;
+}
+
+.description__footer-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+}
+
+.description__footer-link span {
+    margin: 0 8px 0 0;
+}
 
 /* professions */
 .professions__text-content {
@@ -88,14 +210,69 @@
 
 .professions__item {
     width: 372px;
+    height: 515px;
     text-align: left;
     background: var(--background-list-item);
     padding: 36px;
     border-radius: 20px;
+    position: relative;
 }
 
 .professions__item-header {
     display: flex;
     align-items: center;
-    grid-gap: 40px;
+    grid-gap: 13px;
+    border-bottom: 1.5px solid #272953;
+    padding: 0 0 22px;
+    margin: 0 0 29px;
+}
+
+.profession__logo {
+    width: 54px;
+    height: 54px;
+    display: flex;
+    justify-content: center;
+}
+
+.profession__title {
+    font-weight: var(--title-weigth);
+    font-size: var(--text-size);
+    line-height: var(--text-heigth);
+    color: rgba(67, 16, 142, 0.8);
+    width: max-content;
+}
+
+.profession__salary {
+    font-weight: var(--title-weigth);
+    font-size: var(--text-size);
+    line-height: var(--text-heigth);
+    color: rgba(67, 16, 142, 0.8);
+}
+
+.professions__description-list {
+    list-style: disc;
+    padding: 0 0 0 20px;
+}
+
+.professions__description-item {
+    margin: 0 0 16px;
+}
+
+.professions__description-item::marker {
+    color: rgba(91, 0, 225, 0.5);;
+}
+
+.professions__description-item span {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.professions__item-footer {
+    position: absolute;
+    bottom: 36px;
+    left: 36px;
+    right: 36px;
+    display: flex;
+    flex-direction: column;
 }

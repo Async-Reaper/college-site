@@ -44,7 +44,7 @@
                             Добавляйте свои истории!
                         </p>
                         <div class="search">
-                            <input type="text" placeholder="Что найти?">
+                            <input class="search__input" type="text" placeholder="Что найти?">
                             <button class="search__btn">
                                 <img src="./assets/icon/top-icon/search-icon.svg" alt="">
                             </button>
@@ -67,61 +67,65 @@
                 </div>
                 <ul class="news__list">
                     <li class="news__item">
-                        <img src="./assets/img/news-img/1.png" alt="">
-                        <span>IS19-1</span>
-                        <p>ШОК</p>
-                        <span>Съел капусту</span>
-                        <span>18.01.23</span>
-                        <hr>
+                        <div class="news__item-body">
+                            <img src="./assets/img/news-img/1.png" alt="">
+                            <span class="news__name-group">IS19-1</span>
+                            <p class="news__title">ШОК</p>
+                            <span class="news__description">Съел капусту</span>
+                            <span class="news__date">18.01.23</span>
+                        </div>
                         <div class="news__item__footer">
                             <img src="./assets/img/news-img/man-1.png" alt="">
                             <div class="news__item__footer-description">
-                                <span>Palich</span>
+                                <span class="news__name-user">Palich</span>
                                 <span>Я люблю котят</span>
                             </div>
                         </div>
                     </li>
                     <li class="news__item">
-                        <img src="./assets/img/news-img/2.png">
-                        <span>IS19-1</span>
-                        <p>Разбил телефон</p>
-                        <span>Разбил телефон об машину</span>
-                        <span>17.01.23</span>
-                        <hr>
+                        <div class="news__item-body">
+                            <img src="./assets/img/news-img/2.png">
+                            <span class="news__name-group">IS19-1</span>
+                            <p class="news__title">Разбил телефон</p>
+                            <span class="news__description">Разбил телефон об машину</span>
+                            <span class="news__date">17.01.23</span>
+                        </div>
                         <div class="news__item__footer">
                             <img src="./assets/img/news-img/man-2.png" alt="">
                             <div class="news__item__footer-description">
-                                <span>Popcov</span>
+                                <span class="news__name-user">Popcov</span>
                                 <span>Опять болею</span>
                             </div>
                         </div>
                     </li>
                     <li class="news__item">
-                        <img src="./assets/img/news-img/3.png">
-                        <span>IS19-1</span>
-                        <p>Сжог испарик</p>
-                        <span>Я лох</span>
-                        <span>15.01.23</span>
-                        <hr>
+                        <div class="news__item-body">
+                            <img src="./assets/img/news-img/3.png">
+                            <span class="news__name-group">IS19-1</span>
+                            <p class="news__title">Сжог испарик</p>
+                            <span class="news__description">Я лох</span>
+                            <span class="news__date">15.01.23</span>
+                        </div>
                         <div class="news__item__footer">
                             <img src="./assets/img/news-img/man-3.png" alt="">
                             <div class="news__item__footer-description">
-                                <span>Gaak</span>
+                                <span class="news__name-user">Gaak</span>
                                 <span>Я ко 2 хожу</span>
                             </div>
                         </div>
                     </li>
                     <li class="news__item">
-                        <img src="./assets/img/news-img/4.png">
-                        <span>IS19-1</span>
-                        <p>Пришел на пары</p>
-                        <span>ну я с качалки</span>
-                        <span>infinity</span>
-                        <hr>
+                        <div class="news__item-body">
+                            <img src="./assets/img/news-img/4.png">
+                            <span class="news__name-group">IS19-1</span>
+                            <p class="news__title">Пришел на пары</p>
+                            <span class="news__description">ну я с качалки</span>
+                            <span class="news__date">infinity</span>
+                        </div>
                         <div class="news__item__footer">
                             <img src="./assets/img/news-img/man-4.png" alt="">
                             <div class="news__item__footer-description">
-                                <span>Nelubin</span>
+                                <span class="news__name-user">Nelubin</span>
                                 <span>Дома сижу</span>
                             </div>
                         </div>
@@ -152,8 +156,8 @@
                         <source src="URL">
                     </video>
                 </div>
-                <div class="description__footer-link">
-                    <a href="">
+                <div class="description__footer">
+                    <a href="#" class="description__footer-link">
                         <span>Перейти на канал</span>
                         <img src="assets/icon/description-icon/arrow.svg" alt="">
                     </a>
@@ -181,12 +185,11 @@
                             <div class="profession__name">
                                 <h6 class="profession__title">Дизайн</h6>
                                 <span class="profession__salary">
-                            <img src="./assets/icon/professions/dollar.svg" alt="">
-                            50
-                        </span>
+                                    <img src="./assets/icon/professions/dollar.svg" alt="">
+                                    50
+                                </span>
                             </div>
                         </div>
-                        <hr>
                         <div class="professions__item-body">
                             <ul class="professions__description-list">
                                 <li class="professions__description-item">
@@ -211,12 +214,11 @@
                                     Информационные системы
                                 </h6>
                                 <span class="profession__salary">
-                            <img src="./assets/icon/professions/dollar.svg" alt="">
-                            75
-                        </span>
+                                    <img src="./assets/icon/professions/dollar.svg" alt="">
+                                    75
+                                </span>
                             </div>
                         </div>
-                        <hr>
                         <div class="professions__item-body">
                             <ul class="professions__description-list">
                                 <li class="professions__description-item">
@@ -242,12 +244,11 @@
                             <div class="profession__name">
                                 <h6 class="profession__title">Архитектура</h6>
                                 <span class="profession__salary">
-                            <img src="./assets/icon/professions/dollar.svg" alt="">
-                            25
-                        </span>
+                                    <img src="./assets/icon/professions/dollar.svg" alt="">
+                                    25
+                                </span>
                             </div>
                         </div>
-                        <hr>
                         <div class="professions__item-body">
                             <ul class="professions__description-list">
                                 <li class="professions__description-item">
