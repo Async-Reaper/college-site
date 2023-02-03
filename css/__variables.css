@@ -1,6 +1,7 @@
 :root {
     /* color */
     --btn-color: #5B00E1;
+    --btn-hover-color: #8241E0;
     --btn-text-primary-color: #FFFFFF;
     --btn-text-secondary-color: var(--btn-color);
 

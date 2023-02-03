@@ -18,6 +18,14 @@
     grid-gap: 44px;
 }
 
+.nav__link {
+    transition: all .2s;
+}
+
+.nav__link:hover {
+    color: var(--link-color-hover);
+}
+
 .header__left__part {
     display: flex;
     align-items: center;
@@ -33,6 +41,32 @@
     background-position: bottom right;
 }
 
+.top__left__part {
+    position: relative;
+    width: 70%;
+}
+
+.top__left__part::after {
+    position: absolute;
+    content: url("../assets/icon/top-icon/book-icon.svg");
+    top: 70px;
+    right: 200px;
+    transform: rotate(12.79deg);
+    background: linear-gradient(180deg, rgba(214, 216, 249, 0.18) -32.08%, rgba(214, 216, 249, 0.9) 127.36%);
+    border-radius: 20px;
+}
+
+.top__left__part::before {
+    position: absolute;
+    content: url("../assets/icon/top-icon/lamp-icon.svg");
+    top: 180px;
+    left: 80px;
+    transform: rotate(-8.82deg);
+    padding: 16px;
+    background: linear-gradient(180deg, rgba(214, 216, 249, 0.18) -32.08%, rgba(214, 216, 249, 0.9) 127.36%);
+    border-radius: 20px;
+}
+
 .top__inner {
     display: flex;
     justify-content: space-between;
@@ -41,6 +75,7 @@
 
 .search {
     position: relative;
+    width: max-content;
 }
 
 .search__input {
