@@ -183,6 +183,12 @@
     background-position: top left;
 }
 
+.description__video > iframe {
+    width: 648px;
+    height: 365px;
+    border-radius: 5px;
+}
+
 .description__footer {
     text-align: right;
 }
@@ -275,4 +281,10 @@
     right: 36px;
     display: flex;
     flex-direction: column;
+}
+
+.map > iframe {
+    border-radius: 10px;
+    width: 95vw;
+    margin: 0 auto;
 }
