@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ВД</title>
     <link rel="stylesheet" href="./css/global.css">
+    <script src="js/modalContacts.js" defer></script>
 </head>
 <body>
     <header class="header">
@@ -198,9 +199,6 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="professions__item-footer">
-                            <button class="btn__send__request btn-secondary disabled btn ">Проконсультироваться</button>
-                        </div>
                     </li>
                     <li class="professions__item">
                         <div class="professions__item-header">
@@ -230,9 +228,6 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="professions__item-footer">
-                            <button class="btn btn__send__request btn-secondary disabled">Проконсультироваться</button>
-                        </div>
                     </li>
                     <li class="professions__item">
                         <div class="professions__item-header">
@@ -257,16 +252,60 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="professions__item-footer">
-                            <button class="btn btn__send__request btn-secondary disabled">Проконсультироваться</button>
-                        </div>
                     </li>
                 </ul>
+                <div class="professions__item-footer">
+                    <button class="btn professions-btn btn-secondary disabled">Проконсультироваться</button>
+                </div>
             </div>
         </div>
     </section>
     <footer class="map">
         <script type="text/javascript" charset="utf-8" defer src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Adac498dbaae8d42705970be9ec5f1490d35fff7aaa8197f1fa4e45fa57b8ad1a&amp;width=1280&amp;height=539&amp;lang=ru_RU&amp;scroll=true"></script>
     </footer>
+    <div class="contacts__modal">
+        <div class="contacts__modal-body">
+            <div class="contacts__data">
+                <div class="contacts__logo">
+                    <img src="./assets/icon/header-icon/header-logo-icon.svg" alt="">
+                </div>
+                <h6 class="contacts__title">Контактные данные:</h6>
+                <ul class="contacts__list">
+                    <li class="contacts__item">
+                        <img src="./assets/icon/modal-icons/modal-contacts/email-icon.svg" alt="">
+                        <span>kasict@kasict.ru</span>
+                    </li>
+                    <li class="contacts__item">
+                        <img src="./assets/icon/modal-icons/modal-contacts/phone-icon.svg" alt="">
+                        <span>+79009001212</span>
+                    </li>
+                    <li class="contacts__item">
+                        <img src="./assets/icon/modal-icons/modal-contacts/map-coord.svg" alt="">
+                        <span>Ордженикидзе 15</span>
+                    </li>
+                    <li class="contacts__item">
+                        <img src="./assets/icon/modal-icons/modal-contacts/map-coord.svg" alt="">
+                        <span>Мичурина 4</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="contacts__feedback">
+                <h1 class="feedback__title">Консультация</h1>
+                <div class="feedback__body">
+                    <input id="name" type="text" placeholder="ФИО">
+                    <input id="phone/email" type="text" placeholder="Телефон / Почта">
+                    <select id="profession" class="feedback__select">
+                        <option selected disabled>Интересующая профессия</option>
+                        <option>Информационные системы</option>
+                        <option>Архитектура</option>
+                        <option>Дизайн</option>
+                    </select>
+                    <div class="feedback__btn-wrapper">
+                        <button id="send-request-btn" class="feedback__btn">Подать заявку</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
