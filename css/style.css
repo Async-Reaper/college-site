@@ -2,7 +2,7 @@
 
 /* top */
 .top {
-    padding: 0 0 131px;
+    padding: 0 0 60px;
     background-image: url("../assets/img/top-img/top-background.svg");
     background-repeat: no-repeat;
     background-position: bottom right;
@@ -106,7 +106,7 @@
     margin: 0 0 8px;
 }
 
-.news__title {
+.news__body-title {
     font-weight: 600;
     font-size: var(--text-size);
     line-height: var(--text-heigth);
@@ -154,6 +154,10 @@
     background-image: url("../assets/img/description/background-top.svg");
     background-repeat: no-repeat;
     background-position: top left;
+}
+
+.description__text-content {
+    margin: 0 0 83px;
 }
 
 .description__video > iframe {
