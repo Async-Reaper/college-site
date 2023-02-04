@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 @import url('./__variables.css');
 @import url('./__reset.css');
-@import url('./style.css');
 
 .container {
     max-width: 1250px;
@@ -79,5 +78,61 @@ input {
     color: var(--text-secondary-color);
 }
 
+.header {
+    margin: 0 0 38px;
+}
+
+.header__inner {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+    grid-gap: 44px;
+}
+
+.nav__link {
+    transition: all .2s;
+}
+
+.nav__link:hover {
+    color: var(--link-color-hover);
+}
+
+.header__left__part {
+    display: flex;
+    align-items: center;
+    grid-gap: 18px;
+}
+
+
+.search {
+    position: relative;
+    width: max-content;
+}
+
+.search__input {
+    width: 445px;
+    border: none;
+    border-radius: 12px;
+    padding: 22px 32px;
+}
+
+
+.search__btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #ACB0F0;
+    border-radius: 6px;
+    border: none;
+    padding: 10px;
+    width: 44px;
+    height: 44px;
+}
 
 

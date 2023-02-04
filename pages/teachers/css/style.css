@@ -1,0 +1,116 @@
+.top__content {
+    text-align: center;
+    margin: 0 0 32px;
+}
+
+.top__img {
+    margin: 0 auto 32px;
+    width: max-content;
+    position: relative;
+}
+
+.top__inner {
+    position: relative;
+}
+
+.top__inner::before {
+    position: absolute;
+    content: url("../../../assets/icon/top-icon/lamp-icon.svg");
+    bottom: 0;
+    left: 10px;
+    transform: rotate(16.4deg);
+    padding: 16px;
+    background: linear-gradient(180deg, rgba(214, 216, 249, 0.18) -32.08%, rgba(214, 216, 249, 0.9) 127.36%);
+    border-radius: 20px;
+}
+
+.top__inner::after {
+    position: absolute;
+    content: url("../../../assets/icon/top-icon/book-icon.svg");
+    bottom: 70px;
+    right: 130px;
+    transform: rotate(-30.84deg);
+    background: linear-gradient(180deg, rgba(214, 216, 249, 0.18) -32.08%, rgba(214, 216, 249, 0.9) 127.36%);
+    border-radius: 20px;
+}
+
+.search {
+    margin: 0 auto;
+}
+
+.teachers__list {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    grid-auto-flow: row;
+    grid-gap: 50px 65px;
+}
+
+.teachers__item {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(103.05deg, rgba(214, 216, 249, 0.7) 40.59%, rgba(214, 216, 249, 0.455) 83.67%);
+    border-radius: 10px;
+    padding: 10px;
+    grid-gap: 19px;
+    width: 600px;
+    height: 320px;
+}
+
+.teachers__item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.teacher__info {
+    display: flex;
+    align-items: center;
+    grid-gap: 8px;
+}
+
+.teacher__coolness {
+    display: flex;
+    flex-direction: column;
+    font-weight: var(--text-weigth);
+    font-size: 12px;
+    line-height: 18px;
+    color: #9B9DCA;
+}
+
+.teacher__name {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.teacher__name > .name {
+    font-weight: var(--text-weigth);
+    font-size: 20px;
+    line-height: 30px;
+    color: #2D4751;
+}
+
+.name__discipline {
+    font-weight: var(--text-weigth);
+    font-size: 12px;
+    line-height: 18px;
+    color: rgba(45, 71, 81, 0.4);
+}
+
+.teacher__benefits-list {
+    text-align: left;
+    padding: 0 0 0 39px;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 10px;
+    max-width: 260px;
+}
+
+.teacher__benefits-item {
+    display: flex;
+    font-weight: var(--text-weigth);
+    font-size: 12px;
+    line-height: 18px;
+    align-items: center;
+    grid-gap: 5px;
+}
