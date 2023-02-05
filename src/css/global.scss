@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-@import url('./__variables.css');
-@import url('./__reset.css');
+@import url('__variables.scss');
+@import url('__reset.scss');
 
 .container {
     max-width: 1250px;
